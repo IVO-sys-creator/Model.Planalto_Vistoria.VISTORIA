@@ -6,24 +6,24 @@ public class Vistoria {
 	private int idVistoria;
 	private Date dataVistoria;
 	private String itensVerificados;
-	private String observacoes;
+	private String observacao;
 	private int idAgendamento;
-	private int idFuncionario;
+	private int idFuncionarios;
 	
 public Vistoria() {
 }
 
 //Construtor
 
-public Vistoria(int idVistoria, Date dataVistoria, String itensVerificados, 
-		String observacoes, int idAgendamento, int idFuncionario) {
+public Vistoria(int idVistoria, Date dataVistoria, String itens_Verificados, 
+		String observacao, int id_Agendamento, int id_Funcionarios) {
 	
 	this.idVistoria = idVistoria;
 	this.dataVistoria = dataVistoria;
-	this.itensVerificados = itensVerificados;
-	this.observacoes = observacoes;
-	this.idAgendamento = idAgendamento;
-	this.idFuncionario = idFuncionario;	
+	this.itensVerificados = itens_Verificados;
+	this.observacao = observacao;
+	this.idAgendamento = id_Agendamento;
+	this.idFuncionarios = id_Funcionarios;	
 }
 
 //Getters
@@ -40,8 +40,8 @@ public String getItensVerificados() {
 	return itensVerificados;
 }
 
-public String getObservacoes() {
-	return observacoes;
+public String getObservacao() {
+	return observacao;
 }
 
 public int getIdAgendamento() {
@@ -49,7 +49,7 @@ public int getIdAgendamento() {
 }
 
 public int getIdFuncionario() {
-	return idFuncionario;
+	return idFuncionarios;
 }
 
 //Setters
@@ -66,23 +66,23 @@ public void setItensVerificados(String itensVerificados) {
 	this.itensVerificados = itensVerificados;
 }
 
-public void setObservacoes(String observacoes) {
-	this.observacoes = observacoes;
+public void setObservacao(String observacao) {
+	this.observacao = observacao;
 }
 
 public void setIdAgendamento(int idAgendamento) {
 	this.idAgendamento = idAgendamento;
 }
 
-public void setiIdFuncionario(int idFuncionario) {
-	this.idFuncionario = idFuncionario;
+public void setIdFuncionarios(int idFuncionario) {
+	this.idFuncionarios = idFuncionario;
 }
 
 //Transforma objeto em uma String legível
 
 public String toString() {
 	return String.format(
-			"Vistoria {idVistoria=%d, dataVistoria=%s, itensVerificados=%s, observacoes=%s, idAgendamento=%d, "
-			+ "idFuncionario=%d}");
+			"Vistoria {idVistoria=%d, dataVistoria=%s, itensVerificados=%s, observacao=%s, idAgendamento=%d, "
+			+ "idFuncionarios=%d}");
 	}
 }
